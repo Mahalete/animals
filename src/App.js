@@ -5,11 +5,13 @@ import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <>
+    <div>
       <Header />
-      <Main />
+      <section className="animalList">
+        <Main />
+      </section>
       <Footer />
-    </>
+    </div>
   );
 };
 
