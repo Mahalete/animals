@@ -1,10 +1,12 @@
 import React from "react";
+import Nav from "./Nav";
 
 const Header = () => {
   return (
-    <div>
-      <h1>Animals</h1>
-    </div>
+    <header>
+      <h1>Animals app</h1>
+      <Nav />
+    </header>
   );
 };
 

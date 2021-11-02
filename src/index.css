@@ -1,48 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Dosis", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #f1f5f8;
-  color: #222;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+header,
+footer {
+  padding: 2rem;
+  text-align: center;
+}
+
+.animalsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 2rem;
 }
 
 .card {
-  background-color: antiquewhite;
-  box-shadow: 0 0 5px #eee;
-  height: 200px;
-  width: 170px;
+  background-color: snow;
+  box-shadow: 0 0 5px rgb(121, 121, 121);
+  width: 200px;
+  border-radius: 5px;
   display: inline-block;
   margin: 1rem;
-  padding-top: 1rem;
+  text-transform: capitalize;
+  filter: grayscale(100%);
+  transition: all 0.5s;
+}
+
+.card:hover {
+  box-shadow: 0 0 20px rgb(121, 121, 121);
+  filter: grayscale(0%);
+  cursor: pointer;
+}
+
+.card h2 {
+  padding: 1rem;
 }
 
 .card img {
-  width: 90%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+nav {
+  background: lightcyan;
+  height: auto;
+}
+.link_animal {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
-  margin-left: 0.5rem;
-  margin-top: 1rem;
-}
-.animalList {
-  width: 90vh;
-  max-width: 1170px;
-  margin: 5rem auto;
-  display: grid;
-}
-@media screen and (min-width: 768px) {
-  .animalList {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }

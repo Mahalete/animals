@@ -2,16 +2,15 @@ import React from "react";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
+import { BrowserRouter as Router } from "react-router-dom";
 
 const App = () => {
   return (
-    <div>
+    <Router>
       <Header />
-      <section className="animalList">
-        <Main />
-      </section>
+      <Main />
       <Footer />
-    </div>
+    </Router>
   );
 };
 
