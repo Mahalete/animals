@@ -14,7 +14,8 @@ body {
 }
 
 header,
-footer {
+footer,
+main {
   padding: 2rem;
   text-align: center;
 }
@@ -53,13 +54,16 @@ footer {
   object-fit: cover;
   border-radius: 5px 5px 0 0;
 }
-nav {
-  background: lightcyan;
-  height: auto;
+
+nav ul li {
+  display: inline-block;
+  margin: 1rem;
 }
-.link_animal {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+
+button {
+  padding: 1rem 2rem;
+  background-color: lightseagreen;
+  border: 1px solid rgb(23, 135, 129);
+  box-shadow: 0 0 5px #333;
+  margin: 2rem;
 }
