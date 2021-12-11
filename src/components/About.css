@@ -1,0 +1,18 @@
+.about-section {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+  transition: 0.5s;
+}
+.about_title {
+  padding-left: 4rem;
+  height: 80px;
+}
+.about_subtitle {
+  padding-left: 5rem;
+  color: rgb(253, 168, 0);
+}
+.content_text {
+  padding: 8rem;
+  font-size: 25px;
+  background-color: rgb(253, 168, 0);
+}

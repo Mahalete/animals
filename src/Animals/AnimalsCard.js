@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useRouteMatch } from "react-router-dom";
+import "../Animals/AnimalsCard.css";
 
 const AnimalsCard = (props) => {
   const match = useRouteMatch();
