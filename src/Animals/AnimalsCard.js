@@ -9,7 +9,9 @@ const AnimalsCard = (props) => {
     <div className="card">
       <img src={`https://source.unsplash.com/1600x900/?${props.name} alt=''`} />
       <h2>{props.name}</h2>
-      <Link to={`${match.url}/${props.name}`}>Read more</Link>
+      <Link className="read_more" to={`${match.url}/${props.name}`}>
+        Read more
+      </Link>
     </div>
   );
 };

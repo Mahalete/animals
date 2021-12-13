@@ -8,7 +8,7 @@ const About = () => {
         className="about_title
       "
       >
-        About Us
+        About
       </h1>
       <h2 className="about_subtitle">
         Some text about animals and their images.

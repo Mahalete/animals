@@ -84,6 +84,7 @@ import AnimalsCard from "./AnimalsCard";
 
 import { Switch, Route } from "react-router-dom";
 import AnimalSingle from "./AnimalSingle";
+import "../Animals/AnimalsCard.css";
 
 class AnimalsList extends Component {
   state = {
@@ -111,7 +112,11 @@ class AnimalsList extends Component {
         <Route exact path={this.props.match.path}>
           <div className="searchInput">
             <h3 style={{ marginRight: ".5rem" }}>Search: </h3>
-            <input type="text" onChange={this.searchInputHandler}></input>
+            <input
+              className="searchInput_field"
+              type="text"
+              onChange={this.searchInputHandler}
+            ></input>
           </div>
           {AnimalsList}
         </Route>

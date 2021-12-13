@@ -4,7 +4,6 @@ import "../components/Nav.css";
 const Nav = () => {
   return (
     <div className="header">
-      <h1 className="logo">ANIMALS</h1>
       <ul className="link_animal">
         <li className="list_nav">
           <NavLink to="/" exact>

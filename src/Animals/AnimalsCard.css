@@ -64,3 +64,11 @@ button {
   margin-left: 2rem;
   padding-right: 2rem;
 }
+.read_more {
+  color: rgb(253, 168, 0);
+}
+.searchInput_field {
+  background: rgb(253, 168, 0);
+  height: 1.5rem;
+  padding: 0.5rem;
+}
