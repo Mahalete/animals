@@ -26,7 +26,16 @@ const AnimalSingle = () => {
         />
       </div>
       <div>
-        <button onClick={() => history.goBack()}>Back to animals</button>
+        <button
+          style={{
+            backgroundColor: "rgb(253, 168, 0)",
+            width: "120px",
+            height: "60px",
+          }}
+          onClick={() => history.goBack()}
+        >
+          Back to animals
+        </button>
       </div>
     </div>
   );
